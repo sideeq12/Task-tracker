@@ -1,18 +1,6 @@
 import React from 'react'
 import Button from "./Button"
 
-const Header = ({title})=>{
-    const click = ()=>{
-        console.log("click")
-    }
-    return(
-        <header style={style}>
-            <h2>{title}</h2>
-            <Button  color="#ef4f4f" text="Close" onClick={click}/>
-        </header>
-    )
-}
-
 const style ={
     color: "white",
     backgroundColor : "#0C4259",
@@ -23,6 +11,19 @@ const style ={
     justifyContent: "space-between",
     alignItems : "center"
 }
+const Header = ({title})=>{
+    const Onclick = ()=>{
+        console.log("click")
+    }
+    return(
+        <header style={style}>
+            <h2>{title}</h2>
+            <Button  color="#ef4f4f" text="Close" onClick={Onclick}/>
+        </header>
+    )
+}
+
+
 Header.defaultProps ={
     title : "Task Tracker"
 }

@@ -4,7 +4,7 @@ const Add = ({text}) => {
     function Click() {
         console.log("clicked")
     }
-    return (<div type="button" className="Add btn" onClick={Click}>{text}</div>);
+    return (<input type="submit" className="Add btn" onClick={Click} value={text}/>);
 }
 
 export default Add;

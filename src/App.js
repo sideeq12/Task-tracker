@@ -6,14 +6,22 @@ import TaskArray from "./components/lower-segment/task-array";
 
 function App() {
   const [Tasks, setTask ] = useState(TaskArray);
+
+  // delete function
   function deleteTask(id){
-    console.log("delete ", id);
     setTask(Tasks.filter((task)=> task.id !== id))
+  }
+
+  // Reminder toggle function
+  function ToggleReminder(id){
+    setTask(Tasks.map((task)=> task.id == id ? {...task, reminder : !task.reminder}  : task))
+    Tasks.map((task => task.id == id ? console.log(task.reminder) : ""))
+    
   }
   return (
     <div className="App">
     <Upper />
-    {Tasks.length > 0 ? <Lower  task={Tasks} onDelete={deleteTask}/> : "No task available"}
+    {Tasks.length > 0 ? <Lower  task={Tasks} onDelete={deleteTask} toggle={ToggleReminder}/> : "No task available"}
     </div>
   );
 }

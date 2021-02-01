@@ -6,13 +6,13 @@ import Add from "./buttons/Add-button"
 import "./upper.css"
 
 const UpperSection = () => {
-    return ( <div className="upper">
+    return ( <form className="upper">
        <Jumbotron />
         <Text text="Task"/>
         <Text  text="Day & Time"/>
         <Reminder />
         <Add text="Add Task" />
-    </div> );
+    </form> );
 }
  
 export default UpperSection;

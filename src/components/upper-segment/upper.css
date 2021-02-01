@@ -1,0 +1,21 @@
+.upper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Jumbotron{
+    height: 50px;
+    width: 100%;
+    background-color: #845ec2;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.close{
+    padding: 5px 10px;
+    background-color: #ec4646;
+    border-radius: 5px;
+}

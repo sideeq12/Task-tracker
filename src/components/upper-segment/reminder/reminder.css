@@ -1,0 +1,14 @@
+.Inner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.Inner label{
+    margin-right: 200px;
+}
+.checkbox{
+    width: 100px;
+    background-color: blue;
+}

@@ -1,6 +1,10 @@
 .task{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     padding: 5px 10px;
-    margin: 10px;
+    width: 400px;
+    margin-top: 10px;
     height: fit-content;
     background-color: rgb(195, 214, 195);
 }

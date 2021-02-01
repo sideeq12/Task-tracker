@@ -1,7 +1,7 @@
 import Task from "./tasks"
 
-const lower = ({task}) => {
-    return (  <Task tasks={task} />);
+const lower = ({task, onDelete}) => {
+    return (  <Task tasks={task} onDelete={onDelete} />);
 }
  
 export default lower;

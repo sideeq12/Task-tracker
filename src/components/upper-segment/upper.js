@@ -12,7 +12,6 @@ const UpperSection = () => {
         <Text  text="Day & Time"/>
         <Reminder />
         <Add text="Add Task" />
-        
     </div> );
 }
  

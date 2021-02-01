@@ -1,0 +1,9 @@
+.task{
+    padding: 5px 10px;
+    margin: 10px;
+    height: fit-content;
+    background-color: green;
+}
+h4{
+    margin-bottom: 4px;
+}

@@ -1,23 +1,12 @@
-const Tasks =[
-    {
-        id : 1,
-        text : "Appointment with Doctor",
-        day : "February 15th, 2021",
-        reminder : true
-    }
-]
+import Design from "./task-design";
 
-const Task = () => {
-    return (  );
+const Task = ({tasks}) => {
+    return ( <div>
+{tasks.map((task)=>{
+    return <Design  text={task.text} day={task.day}/>
+})}
+    </div> );
 }
- 
-const Tasks =[
-    {
-        id : 1,
-        text : "Appointment with Doctor",
-        day : "February 15th, 2021",
-        reminder : true
-    }
-]export de
 
-fault Task;
+export default Task;
+ 
